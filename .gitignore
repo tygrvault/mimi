@@ -1,4 +1,5 @@
-./config/bot.js
+config
 run.bat
 .git
 .code
+node_modules
