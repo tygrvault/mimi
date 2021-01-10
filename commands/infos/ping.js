@@ -5,8 +5,7 @@ module.exports = {
     utilisation: '{prefix}ping',
 
     execute(client, message) {
-        const msg = message.channel.send(`🏓 Pinging...`);
-
-        msg.edit(`🏓 Pong!\nLatency is ${Math.floor(msg.createdTimestamp - message.createdTimestamp)}\nAPI Latency ${Math.round(client.ping)}ms`);
+        message.channel.send(`🏓 Pinging...`);
+        message.edit(`🏓 Pong!\nLatency is ${Math.floor(msg.createdTimestamp - message.createdTimestamp)}\nAPI Latency ${Math.round(client.ping)}ms`);
     },
 };
