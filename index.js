@@ -2,6 +2,7 @@ const fs = require('fs');
 const discord = require('discord.js');
 const client = new discord.Client({ disableMentions: 'everyone' });
 const { Player } = require('discord-player');
+var DanBotHosting = require("danbot-hosting");
 
 client.player = new Player(client);
 client.config = require('./config/bot');
@@ -34,5 +35,16 @@ for (const file of player) {
     const event = require(`./player/${file}`);
     client.player.on(file.split(".")[0], event.bind(null, client));
 };
+
+client.on("ready", async () => {
+    const API = new DanBotHosting.Client("danbot-k2a7j9", client);
+
+// Start posting
+    let initalPost = await API.autopost();
+    if (initalPost) {
+        console.error(initalPost); // console the error
+    }
+});
+
 /// start bot
 client.login(client.config.discord.token);
