@@ -21,7 +21,7 @@ module.exports = {
         message.channel.send({
             embed: {
                 color: 'EAC8C8',
-                footer: { text: 'Mini by tyger | >help' },
+                footer: { text: 'Mimi by tyger | >help' },
                 fields: [
                     { name: 'Filters', value: filtersStatuses[0].join('\n'), inline: true },
                     { name: '** **', value: filtersStatuses[1].join('\n'), inline: true },

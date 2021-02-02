@@ -13,7 +13,7 @@ module.exports = {
                 embed: {
                     color: 'EAC8C8',
                     author: { name: 'Help' },
-                    footer: { text: 'Mini by tyger | >help' },
+                    footer: { text: 'Mimi by tyger | >help' },
                     fields: [
                         { name: 'Bot', value: infos },
                         { name: 'Music', value: music },
@@ -32,7 +32,7 @@ module.exports = {
                 embed: {
                     color: 'EAC8C8',
                     author: { name: 'Commands' },
-                    footer: { text: 'Mini by tyger | >help' },
+                    footer: { text: 'Mimi by tyger | >help' },
                     fields: [
                         { name: 'Name', value: command.name, inline: true },
                         { name: 'Category', value: command.category, inline: true },

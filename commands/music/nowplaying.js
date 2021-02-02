@@ -20,7 +20,7 @@ module.exports = {
             embed: {
                 color: 'EAC8C8',
                 author: { name: track.title },
-                footer: { text: 'Mini by tyger | >help' },
+                footer: { text: 'Mimi by tyger | >help' },
                 fields: [
                     { name: 'Requested by', value: track.requestedBy.username, inline: false },
                     { name: 'Progress bar', value: client.player.createProgressBar(message, { timecodes: true }), inline: true }
