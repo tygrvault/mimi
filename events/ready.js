@@ -1,5 +1,6 @@
 const exec = require('child_process').exec;
 var DanBotHosting = require('danbot-hosting');
+
 module.exports = async (client) => {
     console.log(`Logged into Discord Successfully!`)
     console.log(`Ready on ${client.guilds.cache.size} servers, for a total of ${client.users.cache.size} users`);
