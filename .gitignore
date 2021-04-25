@@ -3,3 +3,4 @@ run.bat
 .git
 .code
 node_modules/
+.vscode
