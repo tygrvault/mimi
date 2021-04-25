@@ -5,6 +5,6 @@ module.exports = {
     utilisation: '{prefix}remove',
 
     execute(client, message) {
-        
+        message.react('🔜')
     },
 };

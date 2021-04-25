@@ -5,11 +5,11 @@ module.exports = {
     utilisation: '{prefix}nowplaying',
 
     execute(client, message) {
-        if (!message.member.voice.channel) return message.channel.send(`${client.emotes.error} You're not in a voice channel !`);
+        if (!message.member.voice.channel) return message.channel.send(`You're not in a voice channel!`);
 
-        if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return message.channel.send(`${client.emotes.error} You are not in the same voice channel !`);
+        if (message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id) return message.channel.send(`You are not in the same voice channel!`);
 
-        if (!client.player.getQueue(message)) return message.channel.send(`${client.emotes.error} No music currently playing !`);
+        if (!client.player.getQueue(message)) return message.channel.send(`No music currently playing!`);
 
         const track = client.player.nowPlaying(message);
         const filters = [];
@@ -20,7 +20,7 @@ module.exports = {
             embed: {
                 color: 'EAC8C8',
                 author: { name: track.title },
-                footer: { text: 'Mimi by tyger | >help' },
+                footer: { text: 'Mimi | !help | Nord Studios' },
                 fields: [
                     { name: 'Requested by', value: track.requestedBy.username, inline: false },
                     { name: 'Progress bar', value: client.player.createProgressBar(message, { timecodes: true }), inline: true }
