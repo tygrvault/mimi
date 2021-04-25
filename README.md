@@ -2,4 +2,5 @@
 
 Mimi is a discord bot that plays your favorite tunes 🎵
 
-(Mimi is no longer supported and will be ported into [Atlas](https://atlas.nordstudios.org))
+[Top.gg](https://top.gg/bot/801953775911960606)
+[Invite](https://mimi.nordstudios.org)
