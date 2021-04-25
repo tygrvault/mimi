@@ -11,7 +11,7 @@ module.exports = {
 
         if (!client.player.getQueue(message)) return message.channel.send(`No music currently playing!`);
 
-        if (client.player.getQueue(message).tracks.length <= 1) return message.channel.send(`There is only one song in the queue.`);
+        if (client.player.getQueue(message).tracks.length <= 1) return message.channel.send(`There is nothing in the queue.`);
 
         client.player.clearQueue(message);
 
