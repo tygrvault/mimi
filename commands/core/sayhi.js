@@ -1,4 +1,8 @@
 module.exports = {
+    name: 'sayhi',
+    aliases: [],
+    category: 'Core',
+    utilisation: '{prefix}sayhi',
     execute (client, message) {
         message.channel.send({
             embed: {
