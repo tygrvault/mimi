@@ -1,8 +1,8 @@
 module.exports = {
-    name: 'ping',
+    name: 'STV',
     aliases: [],
     category: 'Owner',
-    utilisation: '{prefix}ping',
+    utilisation: '{prefix}STV',
     execute (client, message) {
         function sleep(milliseconds) {
             const date = Date.now();
