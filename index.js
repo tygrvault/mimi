@@ -6,7 +6,6 @@ const exec = require('child_process').exec;
 
 client.player = new Player(client);
 client.config = require('./config/bot');
-client.emotes = client.config.emojis;
 client.filters = client.config.filters;
 client.commands = new discord.Collection();
 
