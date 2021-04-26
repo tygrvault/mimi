@@ -1,3 +1,3 @@
-module.exports = (client, message, queue) => {
-    message.channel.send(`${client.emotes.error} - Music stopped as i have been disconnected from the channel!`);
+module.exports = (message, queue) => {
+    message.channel.send(`Stopped music as I was disconnected from the channel.`);
 };

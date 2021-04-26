@@ -2,6 +2,7 @@ const fs = require('fs');
 const discord = require('discord.js');
 const client = new discord.Client({ disableMentions: 'everyone' });
 const { Player } = require('discord-player');
+const exec = require('child_process').exec;
 
 client.player = new Player(client);
 client.config = require('./config/bot');
