@@ -6,7 +6,7 @@ module.exports = {
     category: 'Owner',
     utilisation: '{prefix}update',
     execute (message) {
-            let channel = message.guild.id();
+            let channel = channel.id();
             exec(`git pull`, (error, stdout) => {
             let response = (error || stdout);
             if (!error) {
