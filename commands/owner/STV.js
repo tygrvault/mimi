@@ -4,19 +4,17 @@ module.exports = {
     category: 'Owner',
     utilisation: '{prefix}STV',
     execute (client, message) {
-        function sleep(milliseconds) {
-            const date = Date.now();
-            let currentDate = null;
-            do {
-              currentDate = Date.now();
-            } while (currentDate - date < milliseconds);
-          }
+      function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
 
-        let announcement = client.channel.get("830515483266514991");
-        announcement.message.send("wait... does this work?");
-        sleep(10000);
-        announcement.message.send("Oh it does, oops hehe")
-        sleep(10000);
-        message.channel.bulkDelete(2);
+        let announcement = "830515483266514991";
+        client.channels.cache.get(announcement).send("Loading...");
+        sleep(5000);
+        client.channels.cache.get(announcement).send("Finding event `STV.js`...")
+        sleep(5000);
+        client.channels.cache.get(announcement).send("Started server on https://mimi.nordstudios.org/shh...")
+        sleep(5000);
+        client.channels.cache.get(announcement).send("*Everything is going to plan... Good.*")
     }
 }
