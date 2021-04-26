@@ -22,7 +22,7 @@ module.exports = async (client) => {
             let response = (error || stdout);
             if (!error) {
                 if (response.includes("Already up to date.")) {
-                    //console.log('Bot is up to date. No changes since last pull.')
+                    console.log('Bot is up to date. No changes since last pull.')
                 } else {
                     client.channels.cache.get('825827995507490886').send('**[Automatic]** \nNew update on GitHub. Pulling... \n\n Logs: \n```' + response + "```" + "\n\n**Restarting bot**");
                     setTimeout(() => {
