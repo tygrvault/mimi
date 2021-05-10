@@ -1,22 +1,11 @@
 const exec = require('child_process').exec;
-var DanBotHosting = require('danbot-hosting');
 
 module.exports = async (client) => {
     console.log(`Logged into Discord Successfully!`)
     console.log(`Ready on ${client.guilds.cache.size} servers, for a total of ${client.users.cache.size} users`);
     client.user.setActivity(client.config.discord.activity);
 
-    // Post to Server
-    const API = new DanBotHosting.Client("danbot-gx9dk", client);
- 
-    // Start posting
-    let initalPost = await API.autopost();
-   
-    if (initalPost) {
-      console.error(initalPost); // console the error
-    }
-
-// Auto GIT pull
+    // Auto GIT pull
     setInterval(() => {
         exec(`git pull`, (error, stdout) => {
             let response = (error || stdout);
@@ -31,5 +20,5 @@ module.exports = async (client) => {
                 }
             }
         })
-    }, 10000)
-};
+    }, 10000);
+}
