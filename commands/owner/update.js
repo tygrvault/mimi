@@ -14,7 +14,7 @@ module.exports = {
                     message.channel.send("Already up to date!")
                 } else {
                     console.log('[GitHub] \nNew update on GitHub. Pulling... \n\n Logs: \n' + response + "\n\n**Restarting bot**");
-                    client.channels.cache.get('840272304776675328').send('New update on GitHub. Pulling... \n\n Logs: \n```' + response + "```" + "\n\n**Restarting bot**");
+                    client.channels.cache.get(client.config.update_channel).send('New update on GitHub. Pulling... \n\n Logs: \n```' + response + "```" + "\n\n**Restarting bot**");
                     setTimeout(() => {
                         process.exit();
                     }, 30000)
