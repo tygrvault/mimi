@@ -12,4 +12,3 @@ A simple Discord music bot that plays YouTube and Spotify links 🎵
 3. In the `bot.js` file, specify your bot token, prefix, etc etc
 4. Run `run.bat`
 5. Profit! 🎉
-
