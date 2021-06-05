@@ -1,6 +1,7 @@
 # Mimi
 A simple Discord music bot that plays YouTube and Spotify links 🎵
-Click [me](https://github.com/Nord-Studios/Mimi/wiki) to get started!
+
+#### Click [me](https://github.com/Nord-Studios/Mimi/wiki) to get started!
 
 ## Info
 - [Invite link](https://mimi.nordstudios.org)
