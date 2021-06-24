@@ -3,8 +3,10 @@ const discord = require('discord.js');
 const client = new discord.Client({ disableMentions: 'everyone' });
 const { Player } = require('discord-player');
 const exec = require('child_process').exec;
+const downloader = require('@discord-player/downloader').Downloader;
 
 client.player = new Player(client);
+client.player.use("YOUTUBE_DL", downloader);
 client.config = require('./config/bot');
 client.filters = client.config.filters;
 client.commands = new discord.Collection();

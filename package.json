@@ -9,13 +9,14 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "@discord-player/downloader": "^2.0.3",
     "@discord-player/extractor": "^2.0.2",
     "@discordjs/form-data": "^3.0.1",
     "@discordjs/opus": "^0.3.3",
-    "discord-player": "^3.4.0",
+    "discord-player": "^4.1.2",
     "discord.js": "^12.5.1",
     "ffmpeg-static": "^4.3.0",
     "ws": ">=7.4.6",
-    "ytdl-core": "^4.4.2"
+    "ytdl-core": "^4.8.2"
   }
 }
