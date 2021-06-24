@@ -5,7 +5,9 @@ const { Player } = require('discord-player');
 const exec = require('child_process').exec;
 const downloader = require('@discord-player/downloader').Downloader;
 
-client.player = new Player(client);
+client.player = new Player(client, {
+    enableLive: true
+});
 client.player.use("YOUTUBE_DL", downloader);
 client.config = require('./config/bot');
 client.filters = client.config.filters;
