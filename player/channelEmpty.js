@@ -1,3 +1,3 @@
-module.exports = (message) => {
+module.exports = (client, message) => {
     return;
 };

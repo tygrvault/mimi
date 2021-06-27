@@ -2,7 +2,7 @@ module.exports = {
     name: 'w-filters',
     aliases: ['filters'],
     category: 'Music',
-    utilisation: '{prefix}w-filters',
+    utilisation: '{prefix}filters',
 
     execute(client, message) {
         if (!message.member.voice.channel) return message.channel.send(`You're not in a voice channel!`);
