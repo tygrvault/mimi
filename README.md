@@ -1,4 +1,5 @@
-# Mimi
+# Mimi 
+**Mimi is archived and will not be updated anymore. R.I.P 2017 - 2021**
 A simple Discord music bot that plays YouTube and Spotify links 🎵
 
 - [Invite link](https://mimi.nordstudios.org)
